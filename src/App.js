@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 import './App.css';
-import './Components/Message';
-import './Components/MessageList';
-import './Components/NewRoomForm';
-import './Components/RoomList';
-import './Components/SendMessageForm';
+import Message from './Components/Message';
+import MessageList from './Components/MessageList';
+import NewRoomForm from './Components/NewRoomForm';
+import RoomList from  './Components/RoomList';
+import SendMessageForm from './Components/SendMessageForm';
 
 
 class App extends React.Component{
