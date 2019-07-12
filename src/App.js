@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Chatkit from '@pusher/Chatkit';
+import {tokenUrl ,instanceLocator} from './config';
 
 import './App.css';
 import Message from './Components/Message';
