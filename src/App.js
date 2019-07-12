@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Chatkit from '@pusher/Chatkit';
 
 import './App.css';
 import Message from './Components/Message';
