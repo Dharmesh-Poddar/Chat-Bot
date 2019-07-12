@@ -32,8 +32,13 @@ class MessageList extends React.Component{
       {
       return(
           <div className="messagelist">
-            {
-                
+            {Dummy_data.map(function(message,index){
+               
+               return (
+                   message.text);
+
+                   
+            })
             }
 
              
