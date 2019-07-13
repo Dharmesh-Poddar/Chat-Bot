@@ -28,6 +28,19 @@ class App extends React.Component{
         }
 
      )
+      chatManager.connect()
+      .then(currentUser =>{
+            currentUser.subscribeToRoom({
+              roomId: 20091219,
+              hooks :{
+                onNewMessage : message=>{
+                  console.log('message.text: ', message.text);
+                  
+                }
+              }
+            })
+
+      })
      
 
   }
