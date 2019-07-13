@@ -13,6 +13,25 @@ import SendMessageForm from './Components/SendMessageForm';
 
 class App extends React.Component{
 
+  componentDidMount(){
+      
+     const chatManager =new Chatkit.ChatManager(
+        {
+          instanceLocator,
+          userId:'gojek',
+          tokenProvider: new Chatkit.tokenProvider(
+            {
+              url:tokenUrl
+
+            }
+          )
+        }
+
+     )
+     
+
+  }
+
    render(){
 
     return(
